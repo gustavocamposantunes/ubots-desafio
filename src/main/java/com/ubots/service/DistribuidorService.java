@@ -18,13 +18,18 @@ public class DistribuidorService {
     }
 
     public void distribuirSolicitacao(Solicitacao s) {
-        String assunto = s.getAssunto().toLowerCase();
-        if (assunto.contains("cartão")) {
-            times.get("Cartões").distribuir(s);
-        } else if (assunto.contains("empréstimo")) {
-            times.get("Empréstimos").distribuir(s);
+        String time = s.getTime();
+        if (time != null && times.containsKey(time)) {
+            times.get(time).distribuir(s);
         } else {
-            times.get("Outros Assuntos").distribuir(s);
+            String assunto = s.getAssunto() != null ? s.getAssunto().toLowerCase() : "";
+            if (assunto.contains("cartão")) {
+                times.get("Cartões").distribuir(s);
+            } else if (assunto.contains("empréstimo")) {
+                times.get("Empréstimos").distribuir(s);
+            } else {
+                times.get("Outros Assuntos").distribuir(s);
+            }
         }
     }
 
