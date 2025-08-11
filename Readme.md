@@ -1,11 +1,11 @@
-# 📞 Ubots - Desafio Técnico
+# Ubots - Desafio Técnico
 
 Este projeto foi desenvolvido como solução para o desafio técnico da vaga de Desenvolvedor(a) na Ubots.  
 O objetivo é criar um sistema para distribuir solicitações de atendimento para diferentes times, respeitando a capacidade de cada atendente e gerenciando filas de espera.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - **Java 17**
 - **Spring Boot 3.2.5**
 - **Springdoc OpenAPI (Swagger UI)**
@@ -14,7 +14,7 @@ O objetivo é criar um sistema para distribuir solicitações de atendimento par
 
 ---
 
-## 📋 Funcionalidades
+## Funcionalidades
 - Distribuição de solicitações para times específicos:
   - **Cartões**
   - **Empréstimos**
@@ -28,7 +28,7 @@ O objetivo é criar um sistema para distribuir solicitações de atendimento par
 
 ---
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 ````
 src/
 ├── main/java/com/ubots
@@ -40,7 +40,7 @@ src/
 └── test/java/com/ubots # Testes unitários
 ````
 
-## 3️⃣ Executar o projeto
+## Executar o projeto
 
 ````
 mvn spring-boot:run
@@ -51,7 +51,7 @@ A aplicação estará disponível em:
 http://localhost:8080
 ````
 
-## 📖 Documentação da API
+## Documentação da API
 Acesse a documentação interativa do Swagger em:
 ````
 http://localhost:8080/swagger-ui/index.html
@@ -63,13 +63,13 @@ Endpoints principais
 * GET /solicitacoes/status → Lista atendentes e fila em tempo real
 * DELETE /solicitacoes/finalizar → Finaliza um atendimento (recebe DTO com time e atendente)
 
-# 🧪 Executar Testes Unitários
+# Executar Testes Unitários
 Para rodar todos os testes:
 ````
 mvn test
 ````
 
-# 📌 Exemplo de Solicitação no Swagger
+# Exemplo de Solicitação no Swagger
 ````
 {
   "cliente": "Maria",
@@ -79,8 +79,8 @@ mvn test
 }
 ````
 
-## ✨ Autor
+## Autor
 
 * Desenvolvido por Gustavo Antunes
-* 📧 Email: gustavocamposantunes@gmail.com
-* 💼 [LinkedIn](https://www.linkedin.com/in/gustavo-antunes-347853163/)
+* Email: gustavocamposantunes@gmail.com
+* [LinkedIn](https://www.linkedin.com/in/gustavo-antunes-347853163/)
